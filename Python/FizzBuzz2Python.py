@@ -1,0 +1,14 @@
+#!/usr/bin/python
+
+flag = True
+for i in range(1,101):
+	if(i%3==0):
+		print("Fizz", end='')
+		flag = False
+	if(i%5==0):
+		print("Buzz", end='')
+		flag = False
+	if(flag):
+		print(i, end='')
+	print(", ", end='')
+	flag = True
